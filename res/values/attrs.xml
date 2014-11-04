@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="mulTabActionBar">
+        <attr name="mtabActionBarHeight" format="dimension" />
+        <attr name="mtabTabHeight" format="dimension" />
+        <attr name="mtabShadow" format="reference" />
+        <attr name="mtabBackground" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="switchTitle">
+        <attr name="tabTxtActiveColor" format="color" />
+        <attr name="tabTxtDisableColor" format="color" />
+        <attr name="tabLineColor" format="color" />
+        <attr name="tabTxtSize" format="dimension" />
+        <attr name="tabLineHeight" format="dimension" />
+        <attr name="tabPadding" format="dimension" />
+    </declare-styleable>
+
+</resources>
