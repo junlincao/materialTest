@@ -126,10 +126,10 @@ public class MulTabActionBar extends LinearLayout {
 	private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 		Resources res = getResources();
 		TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.mulTabActionBar, 0, 0);
-		mActionBarHeight = a.getInt(R.attr.mtabActionBarHeight, res.getDimensionPixelSize(R.dimen.actionbar_height));
-		mSwitchTabHeight = a.getInt(R.attr.mtabTabHeight, res.getDimensionPixelSize(R.dimen.switch_title_height));
-		int shadowResId = a.getResourceId(R.attr.mtabShadow, 0);
-		mBackgoundColor = a.getColor(R.attr.mtabBackground, res.getColor(R.color.green_500));
+		mActionBarHeight = a.getInt(R.styleable.mulTabActionBar_mtabActionBarHeight, res.getDimensionPixelSize(R.dimen.actionbar_height));
+		mSwitchTabHeight = a.getInt(R.styleable.mulTabActionBar_mtabTabHeight, res.getDimensionPixelSize(R.dimen.switch_title_height));
+		int shadowResId = a.getResourceId(R.styleable.mulTabActionBar_mtabShadow, 0);
+		mBackgoundColor = a.getColor(R.styleable.mulTabActionBar_mtabBackground, res.getColor(R.color.green_500));
 		a.recycle();
 
 		mActionBar = new Toolbar(context, attrs, defStyleAttr);

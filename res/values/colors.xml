@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="white">#ffffff</color>
+    <color name="white">#ffffffff</color>
     <color name="switchTitleline">#ffffffff</color>
-    <color name="switchTitleTxtActive">#ffffff</color>
+    <color name="switchTitleTxtActive">#ffffffff</color>
     <color name="switchTitleTxtDisable">#99ffffff</color>
 
     <!-- Colori di Material Design -->
