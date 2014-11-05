@@ -7,7 +7,7 @@
     
     <dimen name="switch_title_height">48dp</dimen>
     <dimen name="mulTabActionBarHeight">48dp</dimen>
-    <dimen name="switchTitleTxtSize">14sp</dimen>
+    <dimen name="switchTitleTxtSize">14dp</dimen>
     <dimen name="switchTitleLineHeight">2dp</dimen>
     <dimen name="switchTitleTabPadding">12dp</dimen>
 
