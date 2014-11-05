@@ -5,4 +5,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string-array name="test_titles">
+        <item>page</item>
+        <item>咖啡</item>
+        <item>白咖啡</item>
+        <item>原味</item>
+        <item>怡宝</item>
+        <item>马来西亚</item>
+        <item>40g</item>
+        <item>生产日期</item>
+        <item>三合一</item>
+    </string-array>
+
 </resources>

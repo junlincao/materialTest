@@ -5,7 +5,7 @@
         <attr name="mtabActionBarHeight" format="dimension" />
         <attr name="mtabTabHeight" format="dimension" />
         <attr name="mtabShadow" format="reference" />
-        <attr name="mtabBackground" format="color" />
+        <attr name="mtabBackground" format="reference|color" />
     </declare-styleable>
     
     <declare-styleable name="switchTitle">

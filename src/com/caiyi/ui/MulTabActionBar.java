@@ -4,8 +4,8 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.animation.AccelerateInterpolator;
@@ -52,6 +52,11 @@ public class MulTabActionBar extends LinearLayout {
 
 	public MulTabActionBar(Context context) {
 		this(context, null);
+	}
+
+	/** @return 获取toolbar对象 **/
+	public Toolbar getToolBar() {
+		return mActionBar;
 	}
 
 	/** @return 获取switchTitle对象 **/
@@ -124,30 +129,30 @@ public class MulTabActionBar extends LinearLayout {
 	}
 
 	private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+		setOrientation(VERTICAL);
 		Resources res = getResources();
 		TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.mulTabActionBar, 0, 0);
-		mActionBarHeight = a.getInt(R.styleable.mulTabActionBar_mtabActionBarHeight, res.getDimensionPixelSize(R.dimen.actionbar_height));
-		mSwitchTabHeight = a.getInt(R.styleable.mulTabActionBar_mtabTabHeight, res.getDimensionPixelSize(R.dimen.switch_title_height));
+		mActionBarHeight = a.getInt(R.styleable.mulTabActionBar_mtabActionBarHeight,
+				res.getDimensionPixelSize(R.dimen.actionbar_height));
+		mSwitchTabHeight = a.getInt(R.styleable.mulTabActionBar_mtabTabHeight,
+				res.getDimensionPixelSize(R.dimen.switch_title_height));
 		int shadowResId = a.getResourceId(R.styleable.mulTabActionBar_mtabShadow, 0);
 		mBackgoundColor = a.getColor(R.styleable.mulTabActionBar_mtabBackground, res.getColor(R.color.green_500));
 		a.recycle();
 
 		mActionBar = new Toolbar(context, attrs, defStyleAttr);
+		mActionBar.setId(R.id.action_bar);
 		mActionBar.setBackgroundColor(mBackgoundColor);
+		mActionBar.setTitleTextColor(Color.WHITE);
 		mSwitchTitle = new SwitchTitle(context, attrs, defStyleAttr);
 		mSwitchTitle.setBackgroundColor(mBackgoundColor);
 		ImageView ivShadow = new ImageView(context, attrs, defStyleAttr);
 		ivShadow.setScaleType(ScaleType.FIT_XY);
-		ivShadow.setBackgroundResource(shadowResId);
+		ivShadow.setImageResource(shadowResId);
 
 		addView(mActionBar, new LayoutParams(LayoutParams.MATCH_PARENT, mActionBarHeight));
 		addView(mSwitchTitle, new LayoutParams(LayoutParams.MATCH_PARENT, mSwitchTabHeight));
 		addView(ivShadow, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
-	}
-
-	public void setAsActionBar(ActionBarActivity aba) {
-		aba.setSupportActionBar(mActionBar);
-
 	}
 
 }

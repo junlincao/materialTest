@@ -3,10 +3,11 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="actionbar_height">?attr/actionBarSize</dimen>
+<!--     <dimen name="actionbar_height">?attr/actionBarSize</dimen> -->
+    <dimen name="actionbar_height">56dp</dimen>
     
     <dimen name="switch_title_height">48dp</dimen>
-    <dimen name="mulTabActionBarHeight">48dp</dimen>
+    <dimen name="mulTabActionBarHeight">104dp</dimen>
     <dimen name="switchTitleTxtSize">14dp</dimen>
     <dimen name="switchTitleLineHeight">2dp</dimen>
     <dimen name="switchTitleTabPadding">12dp</dimen>
