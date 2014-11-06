@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     tools:context="com.caiyi.testfootball.FootballActivity" >
 
-    <com.caiyi.ui.MulTabActionBar
-        android:id="@+id/mtab_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/mtab_title" />
+        android:layout_marginTop="@dimen/switch_title_height" />
+
+    <com.caiyi.ui.MulTabActionBar
+        android:id="@+id/mtab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:layout_width="match_parent"
