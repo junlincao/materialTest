@@ -2,6 +2,7 @@
 <resources>
 
     <color name="white">#ffffffff</color>
+    <color name="black">#00000000</color>
     <color name="switchTitleline">#ffffffff</color>
     <color name="switchTitleTxtActive">#ffffffff</color>
     <color name="switchTitleTxtDisable">#99ffffff</color>

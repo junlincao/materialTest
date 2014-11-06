@@ -2,10 +2,12 @@
 <resources>
 
     <declare-styleable name="mulTabActionBar">
-        <attr name="mtabActionBarHeight" format="dimension" />
+        <!-- switchTitle 高度 -->
         <attr name="mtabTabHeight" format="dimension" />
-        <attr name="mtabShadow" format="reference" />
+        <!-- 整个背景色 -->
         <attr name="mtabBackground" format="reference|color" />
+        <!-- ActionBar style -->
+        <attr name="mActionBarStyle" format="reference" />
     </declare-styleable>
     
     <declare-styleable name="switchTitle">
